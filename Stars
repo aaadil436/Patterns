@@ -45,7 +45,7 @@ while x<=n:
 *****
 
 
-# Inverted Triangle Pattern
+# Inverted Triangle Pattern of Stars
 
 n=int(input())
 x=1
@@ -85,7 +85,7 @@ while x<=n:
     *
     
     
-# Hollow Rectangle
+# Hollow Rectangle of Stars
 
 n=int(input())
 for i in range(n):
@@ -114,7 +114,7 @@ for i in range(n):
 
 
 
-# Pyramid of Numbers using While Loop
+# Pyramid of Stars using While Loop
 n=int(input())
 x=1
 k=n-1
@@ -147,3 +147,97 @@ while x<=n:
   *******
  *********
 ***********
+
+
+# Diamond Pattern of Stars
+n=int(input())
+s=(2*n)-1
+a=1
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for j in range(a):
+        print("*",end="")
+    a=a+2
+    print()
+for k in range(s-n):
+    for j in range(k+1):
+        print(" ", end="")
+        
+    for j in range(a-4):
+        print("*", end="")
+        
+    a-=2
+    print()
+    
+    
+    
+#Sample Input:
+10
+#Sample Output
+
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+ *****************
+  ***************
+   *************
+    ***********
+     *********
+      *******
+       *****
+        ***
+         *
+         
+         
+         
+# Arrow Pattern of Stars
+
+
+n=int(input())
+
+s=(n-1)/2
+s=int(s)
+
+x=0
+y=1
+for i in range(s+1):
+    for i in range(x):
+        print(" ", end="")
+    for i in range(y):
+        print("*", end=" ")
+    x+=1
+    y+=1
+    print()
+    
+a=x-2
+b=y-2
+for i in range(s+1,n):
+    for i in range(a):
+        print(" ", end="")
+    for i in range(b):
+        print("*", end=" ")
+    a-=1
+    b-=1
+    print()
+    
+#Sample Input: 9
+# Sample Output:
+* 
+ * * 
+  * * * 
+   * * * * 
+    * * * * * 
+   * * * * 
+  * * * 
+ * * 
+* 
+
+
